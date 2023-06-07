@@ -19,8 +19,11 @@
     color: white;
 } */
 
-#comunity
+
+
+#comunity::after
 {
     text-transform: capitalize;
     content: "Comunidade";
+
 }
