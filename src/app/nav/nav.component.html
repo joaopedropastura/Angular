@@ -1,5 +1,13 @@
-<ul class="loginBox">
-    <li>
+<nav mat-tab-nav-bar [backgroundColor]="background"  >
+    <div mat-tab-link *ngFor="let link of links"
+    (click)="activeLink = link"
+    [active]="activeLink == link"> 
+
+    <a routerLink= {{link}} id={{link}}>{{link}} </a>
+
+    </div>
+</nav>
+    <!-- <li>
         <a href="/">Home</a>
     </li>
     <li>
@@ -10,5 +18,4 @@
     </li>
     <li>
         <a href="/login">Login</a>
-    </li>
-</ul>
+    </li> -->

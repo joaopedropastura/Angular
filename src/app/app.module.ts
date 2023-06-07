@@ -21,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Added for use ReactiveForms
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button'; // Added for use Angular Material Button
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -46,8 +47,10 @@ import { MatButtonModule } from '@angular/material/button'; // Added for use Ang
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    ReactiveFormsModule, BrowserAnimationsModule,
-    MatButtonModule // Added for use Angular Material Button
+    ReactiveFormsModule, 
+    BrowserAnimationsModule,
+    MatButtonModule, 
+    MatTabsModule // Added for use Angular Material Button
   ],
   providers: [],
   bootstrap: [AppComponent]
