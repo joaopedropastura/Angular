@@ -8,12 +8,10 @@
     <input [(ngModel)]="email">
 </p>
 
-<app-password [seePassword]="false" [breakLineOnInput]="true" />
-
+<app-password [seePassword]="false" [breakLineOnInput]="true" (valueChanged)="passwordChanged($event)" />
 <p>
-    <button>Logar</button>
+    <button mat-flat-button color="primary" (click)="login()">Logar</button>
 </p>
-
 <p>
     Não possui conta? <a routerLink="newaccount">Crie uma agora mesmo!</a>
 </p>

@@ -16,6 +16,11 @@ import { PasswordComponent } from './password/password.component';
 import { FormsModule } from '@angular/forms';
 import { CreatePasswordComponent } from './create-password/create-password.component';
 import { VerifyCpfComponent } from './verify-cpf/verify-cpf.component'; // Adicionado para poder usar o ngModel
+import { HttpClientModule } from '@angular/common/http'; // Added for use HttpClient
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Added for use ReactiveForms
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button'; // Added for use Angular Material Button
 
 @NgModule({
   declarations: [
@@ -36,7 +41,13 @@ import { VerifyCpfComponent } from './verify-cpf/verify-cpf.component'; // Adici
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule, BrowserAnimationsModule,
+    MatButtonModule // Added for use Angular Material Button
   ],
   providers: [],
   bootstrap: [AppComponent]
