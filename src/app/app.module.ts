@@ -22,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button'; // Added for use Angular Material Button
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -50,6 +52,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     ReactiveFormsModule, 
     BrowserAnimationsModule,
     MatButtonModule, 
+    MatCardModule,
     MatTabsModule // Added for use Angular Material Button
   ],
   providers: [],

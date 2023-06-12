@@ -7,8 +7,8 @@ import { ThemePalette } from '@angular/material/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-  links = ['Home', 'Feed', 'comunity', 'Login'];
-  activeLink = this.links[0];
+  links = {'home':'Home', 'feed':'Feed', 'comunity':'Comunidade', 'login':'Login'};
+  activeLink = this.links.home;
 
   background: ThemePalette = 'primary';
 

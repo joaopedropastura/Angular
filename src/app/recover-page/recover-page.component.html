@@ -1,5 +1,19 @@
-<p>
+<!-- <p>
     Digite seu email para recuperar a senha:
 </p>
 <input value="{{email}}" />
-<button (click)="send()">Enviar Email</button>
+<button (click)="send()">Enviar Email</button> -->
+<div id="recover-card">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>Recuperação de conta </mat-card-title>
+            <mat-card-subtitle>Digite o seu email cadastrado na sua conta e lhe enviaremos um link com as instruções </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <input value="{{email}}" />
+        </mat-card-content>
+        <mat-card-actions>
+            <button (click)="send()">Enviar Email</button> 
+        </mat-card-actions>
+    </mat-card>
+</div>
