@@ -11,5 +11,4 @@ export class NavComponent {
   activeLink = this.links.home;
 
   background: ThemePalette = 'primary';
-
 }

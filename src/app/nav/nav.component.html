@@ -1,9 +1,9 @@
 <nav mat-tab-nav-bar [backgroundColor]="background"  >
     <div mat-tab-link *ngFor="let link of links | keyvalue"
-    (click)="activeLink = link.key"
-    [active]="activeLink == link.key"
-    routerLink= {{link.key}}>{{link.value}}
-
+        (click)="activeLink = link.key"
+        [active]="activeLink == link.key"
+        routerLink= {{link.key}} >
+            {{link.value}}
     </div>
 </nav>
     <!-- <li>
